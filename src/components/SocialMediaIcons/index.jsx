@@ -1,8 +1,18 @@
-import { getImageUrl } from '../data/utils/function';
-const SocialMediaIcons = ({socialMedia}) => {
+import styles from './social.module.css'
+import { getImageUrl } from "../../utils/function";
+const SocialMediaIcons = () => {
+    const socialMediaLinks = [
+        { name: 'facebook', image: 'facebook-icon.png'},
+        { name: 'twitter', image: 'twitter-icon.jpeg'},
+        { name: 'instagram', image: 'instagram-icon.png'},
+        { name: 't-icon', image: 't-icon.jpeg'}
+    
+    ]
+       
     return (
          <div className= {styles.SocialMediaIcons}>
-            {socialMedia.map((social, index) => <img key={index} src={getImageUrl(social.icon)} ></img>)}
+            {/* <img src={getImageUrl("facebook-icon.png")} alt="" /> */}
+            {socialMediaLinks.map((social, index) => <img key={index} src= {`${getImageUrl(social.image)}`} alt={social.name}></img>)}
          </div>
     )
 }

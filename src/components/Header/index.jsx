@@ -1,12 +1,11 @@
-import {getImageUrl} from '../data/utils/function'
+import styles from './header.module.css';
+import { getImageUrl } from '../../utils/function';
 import SocialMediaIcons from '../SocialMediaIcons';
-import styles from './social.modole.css'
+// import styles from './social.modole.css'
 const Header = () => {
           return (
             <header className={styles.Header}>
-             <div className={styles.icon}>
-                  <img src={getImageUrl("facebook-icon.png")} alt="" />
-             </div>
+               <SocialMediaIcons/>
               <div className={styles.pageTitle}>
                 <h1>News For Today</h1>
               </div>

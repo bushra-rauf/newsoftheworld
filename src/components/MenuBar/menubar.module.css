@@ -1,0 +1,10 @@
+.menuBar {
+    display: flex;
+    background-color: black;
+
+}
+
+.styles.menuList {
+    display: flex;
+    flex-direction: row;
+}
