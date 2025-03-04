@@ -1,0 +1,48 @@
+npm create vite@latest   it will ask a project name i am doing on worldnews enter 
+select react 
+select javascript 
+now npm i enter all the dependencies installed 
+npm run dev 
+delete app.css file
+app.jsx delete code just keep the function the code look like this 
+
+function App() {
+ 
+
+  return (
+    <>
+      hello
+    </>
+  )
+}
+
+export default App
+
+index.css delete everything and create your on css like this
+
+:root {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+create a folder components under src 
+inside components create folder name Header
+inside Header create file index.jsx and header.module.css
+
+now start coding 
+
+for installing icons 
+npmjs.com type social logos click and copy from it.
+
+npm install social-logos --save
+example:-
+import { SocialLogo } from 'social-logos';
+function MyComponent() {
+	return <SocialLogo icon="wordpress" size={ 48 } />;
+}
+
